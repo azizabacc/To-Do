@@ -1,18 +1,9 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
+body {
     background-color: #F5F5F5;
     font-family: Arial, sans-serif;
   }
   
   .container {
-    width: 90%;
-    max-width: 600px;
-    margin: 0 auto;
     padding: 20px;
     background-color: #FFFFFF;
     border-radius: 5px;
@@ -26,47 +17,33 @@
   }
   
   form {
-    display: flex;
     margin-bottom: 20px;
   }
   
-  form input[type="text"] {
-    flex: 1;
-    padding: 10px;
-    border: none;
-    border-radius: 5px 0 0 5px;
-    font-size: 16px;
+  .list-group {
+    margin-top: 20px;
   }
   
-  form button[type="submit"] {
-    padding: 10px;
-    background-color: #007AFF;
-    color: #FFFFFF;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  ul.tasks {
-    list-style: none;
-  }
-  
-  ul.tasks li {
+  .list-group-item {
     display: flex;
     align-items: center;
-    padding: 10px;
     background-color: #FFFFFF;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
     margin-bottom: 10px;
   }
   
-  ul.tasks li input[type="checkbox"] {
+  .list-group-item input[type="checkbox"] {
     margin-right: 10px;
   }
   
-  ul.tasks li .task {
+  .list-group-item .task {
     flex: 1;
     font-size: 16px;
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 600px;
+    }
   }
